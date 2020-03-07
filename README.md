@@ -4,10 +4,10 @@
 In this project our goal will be implementing a stochastic gradient descent algorithm for a neural network with one hidden layer.
 
 #### NNOneSplit function
-See our implementation of two algorithms using R language in [this file](temp.txt).
+See our implementation of NNetOneSplit function using R language [here](NNetOneSplit.R).
 
 #### Gradient Descent Algorithm
-You can also see our implementation of Gradient Descent Algorithm using R language [here](https://github.com/lei37927/CS499_Deep_Learning_Project-1/blob/master/GradientDescent.R).
+You can also see our implementation of Gradient Descent Algorithm using R language [here](GradientDescent.R).
 
 ## How to run it
 ### 1 Environment Configuration
@@ -23,25 +23,42 @@ You can download RStudio [here](https://rstudio.com/products/rstudio/download/#d
 
 ### 2 Having the project
 #### 2.1 Download the project
-You can use ```git clone``` to download the project or just click the green button to download a ZIP file.
+You can use ```git clone``` to clone the project or just click the green button to download a ZIP file.
 
 #### 2.2 Unzip the project
 Use any tools you like to unzip the project into the folder you want.
 
 ### 3 Run the project
-#### 3.1 Open Rproj file
+#### 3.1 Set the path
 ***This is an important step, ignoring this may cause some problems with reading data.***
-This will set your workspace to this folder, where you unzip all the R and data files on your machine.
+Open RStudio, in the 'console' command line at the bottom left corner, type
+```
+setwd('PATH')
+```
+where PATH is where you unzip all the R files and data on your machine.
+
+WARNING: In your path, use '/' instead of '\'.
 
 #### 3.2 Open R files
 Click 'File'->'Open File' at the top left corner, the choose
 ```
-Project2.R
+GradientDescent.R
+NNetOneSplit.R
+Experiment.R
+Extra_Credit-2.R
+Extra_Credit-3.R
+Extra_Credit-5.R
 ```
 to open it.
 
 #### 3.3 Run R files
-Open Project2.R, then click the 'run' button in the file section (not the whole window) once, this will run the current line, which is the whole file in this case.
+First go to GradientDescent.R, then click the 'run' button in the file section (not the whole window) once, this will run the current line, until there's nothing running in the console section.
+
+Then go to NNetOneSplit.R, then click 'run' again until there's nothing running in the console section.
+
+Then go to Experiment.R, then click 'run' until we see the package 'ggplot' is called, a graph will show in the bottom right section, showing the relationship between subtrain/validation loss and # of epochs with a point to emphasize the minimum of the validation loss curve. Click more, a percentage table will show. Maybe you need to wait for a while to train and load. When the console in the bottom left corner is running, please do not load new commands.
+
+For extra credits, just go to Extra_Credit-2.R, Extra_Credit-3.R, Extra_Credit-5.R, and run from the first line again to the end. Maybe you need to wait for a while to train and load. When the console in the bottom left corner is running, please do not load new commands.
 
 Maybe you need to wait for a while to train and load. When the console in the bottom left corner is running, please do not load new commands.
 
